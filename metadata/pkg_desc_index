@@ -1,1 +1,2 @@
 www-client/yandex-browser-beta 17.6.1.835_p1: The web browser from Yandex
+www-client/yandex-browser-ffmpeg-codecs 59.0.3071.109: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
