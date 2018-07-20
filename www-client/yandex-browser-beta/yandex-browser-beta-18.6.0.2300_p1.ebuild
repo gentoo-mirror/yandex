@@ -99,7 +99,6 @@ src_prepare() {
 }
 
 src_install() {
-	keepdir "${EPREFIX}/${YANDEX_HOME}"
 	mv * "${D}" || die
 	dodir "/usr/$(get_libdir)/${PN}/lib"
 	make_wrapper "${PN}" "./${PN}" "${EPREFIX}/${YANDEX_HOME}" "${EPREFIX}/usr/$(get_libdir)/${PN}/lib"
