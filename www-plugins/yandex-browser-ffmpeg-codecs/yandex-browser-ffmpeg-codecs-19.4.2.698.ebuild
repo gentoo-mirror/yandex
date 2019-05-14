@@ -3,7 +3,7 @@
 
 EAPI=6
 PYTHON_COMPAT=( python2_7 )
-
+MY_PV="73.0.3683.103"
 inherit check-reqs chromium-2 eutils unpacker flag-o-matic ninja-utils python-any-r1 toolchain-funcs versionator
 
 RESTRICT="bindist mirror"
@@ -12,8 +12,8 @@ HOMEPAGE="http://www.chromium.org/Home"
 LICENSE="BSD"
 SLOT="0"
 SRC_URI="
-	https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${PV}.tar.xz
-	http://gpo.ws54.tk/gentoo-distfiles/chromium-${PV}.tar.xz
+	https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${MY_PV}.tar.xz -> ${P}.tar.xz
+	http://gpo.ws54.tk/gentoo-distfiles/${P}.tar.xz
 "
 KEYWORDS="~amd64 ~x86"
 IUSE="+component-build +proprietary-codecs pulseaudio x86? ( pic )"
@@ -90,15 +90,18 @@ fi
 
 DISABLE_AUTOFORMATTING="yes"
 PATCHES=(
+	"${FILESDIR}/73-allocator-shim-Swap-ALIGN_LINKAGE-and-SHIM_ALWAYS_EX.patch"
+	"${FILESDIR}/73-color_utils-Use-std-sqrt-instead-of-std-sqrtf.patch"
+	"${FILESDIR}/73-quic_flags_impl-Fix-GCC-build-after-618558.patch"
 )
 
-S="${WORKDIR}/chromium-${PV}"
+S="${WORKDIR}/chromium-${MY_PV}"
 YANDEX_HOME="opt/yandex/browser-beta"
 
 pre_build_checks() {
 	# Check build requirements, bug #541816 and bug #471810 .
 	CHECKREQS_MEMORY="3G"
-	CHECKREQS_DISK_BUILD="5G"
+	CHECKREQS_DISK_BUILD="6G"
 	eshopts_push -s extglob
 	if is-flagq '-g?(gdb)?([1-9])'; then
 		CHECKREQS_DISK_BUILD="25G"
