@@ -1,3 +1,4 @@
-www-client/yandex-browser-beta 22.1.3.907_p1: The web browser from Yandex
-www-plugins/yandex-browser-ffmpeg-codecs 20.8.0.864: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
-www-plugins/yandex-browser-ffmpeg-codecs-bin 99.0.4844.84: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
+www-client/yandex-browser 22.11.0.2484_p1: The web browser from Yandex
+www-client/yandex-browser-beta 22.9.1.1110_p1: The web browser from Yandex
+www-plugins/yandex-browser-ffmpeg-codecs-beta-bin 106.0.5249.30: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
+www-plugins/yandex-browser-ffmpeg-codecs-bin 106.0.5249.30: Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
