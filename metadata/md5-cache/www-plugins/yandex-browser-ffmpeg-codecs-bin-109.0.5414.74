@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Multi-threaded ffmpeg codecs needed for the HTML5 <audio> and <video> tags
+EAPI=8
+HOMEPAGE=http://www.chromium.org/Home
+INHERIT=unpacker
+KEYWORDS=~amd64
+LICENSE=BSD
+RESTRICT=bindist strip mirror
+SLOT=0
+SRC_URI=amd64? ( http://launchpadlibrarian.net/645929444/chromium-codecs-ffmpeg-extra_109.0.5414.74-0ubuntu0.18.04.14_amd64.deb )
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	9a610728b9bcca1919234cceb35a1027	multilib	5ca4e49abed8e3a2f7b56920eadee157	unpacker	fdd15d854bf5e84f82d35524ab8ca6ba
+_md5_=83689e88586b723a8ebd2cdcbfb4bb97
