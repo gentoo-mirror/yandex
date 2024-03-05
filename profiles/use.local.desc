@@ -4,3 +4,4 @@
 
 www-client/yandex-browser:ffmpeg-codecs - Use www-plugins/yandex-browser-ffmpeg-codecs-bin for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
 www-client/yandex-browser-beta:ffmpeg-codecs - Use www-plugins/yandex-browser-ffmpeg-codecs-bin for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
+www-client/yandex-browser-corporate:ffmpeg-codecs - Use www-plugins/yandex-browser-ffmpeg-codecs-bin for multi-threaded ffmpeg codecs for the HTML5 <audio> and <video> tags
