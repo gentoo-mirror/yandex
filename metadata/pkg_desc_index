@@ -1,3 +1,4 @@
-www-client/yandex-browser 24.4.1.951_p1: The web browser from Yandex
-www-client/yandex-browser-beta 24.6.1.808_p1: The web browser from Yandex
-www-client/yandex-browser-corporate 24.4.3.1118_p1: The web browser from Yandex
+media-video/ffmpeg-chromium 124: FFmpeg built specifically for codec support in Chromium-based browsers
+www-client/yandex-browser 24.6.1.852_p1: The web browser from Yandex
+www-client/yandex-browser-beta 24.6.1.853_p1: The web browser from Yandex
+www-client/yandex-browser-corporate 24.6.4.669_p1: The web browser from Yandex
