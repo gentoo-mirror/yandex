@@ -13,5 +13,5 @@ REQUIRED_USE=arm64? ( cpu_flags_arm_v8 ) cpu_flags_arm_v8? ( cpu_flags_arm_vfpv3
 RESTRICT=test
 SLOT=124
 SRC_URI=https://deps.gentoo.zip/media-video/ffmpeg-chromium-124.tar.xz
-_eclasses_=toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d
+_eclasses_=toolchain-funcs	5f8f1dc0c94e007fa08af4e98a19d0e5	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d
 _md5_=96888ea61422b58db02d0b9223b40b50
