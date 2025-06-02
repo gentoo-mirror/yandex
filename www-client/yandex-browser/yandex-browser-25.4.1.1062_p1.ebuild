@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,7 +15,7 @@ case ${PN} in
 		HOMEPAGE="https://browser.yandex.ru/"
 		BLOCK="!www-client/yandex-browser-corporate"
 		DESKTOP_FILE_NAME="${PN}"
-		FFMPEG_PV="132"
+		FFMPEG_PV="135"
 		# check in update_ffmpeg script on unpack phase (in the string containing "jq")
 		# (don't call prepare when you want to check, as prepare phase removes it)
 		# Or you may look for "based on Chromium <version> in "control" file in the deb package.
@@ -25,14 +25,15 @@ case ${PN} in
 		MY_PN="${PN}"
 		HOMEPAGE="https://browser.yandex.ru/beta/"
 		DESKTOP_FILE_NAME="${PN}"
-		FFMPEG_PV="132"
+		FFMPEG_PV="135"
 		;;
 	yandex-browser-corporate)
 		MY_PN="${PN}"
 		DESKTOP_FILE_NAME="${PN%%-corporate}"
 		BLOCK="!www-client/yandex-browser"
 		HOMEPAGE="https://browser.yandex.ru/corp"
-		FFMPEG_PV="130"
+		# Request too old ffmpeg-codecs less 134
+		FFMPEG_PV="134"
 		;;
 esac
 YANDEX_HOME="opt/${DESKTOP_FILE_NAME/-//}"
