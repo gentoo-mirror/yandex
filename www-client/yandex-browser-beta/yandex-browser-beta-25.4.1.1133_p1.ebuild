@@ -32,8 +32,7 @@ case ${PN} in
 		DESKTOP_FILE_NAME="${PN%%-corporate}"
 		BLOCK="!www-client/yandex-browser"
 		HOMEPAGE="https://browser.yandex.ru/corp"
-		# Request too old ffmpeg-codecs less 134
-		FFMPEG_PV="134"
+		FFMPEG_PV="135"
 		;;
 esac
 YANDEX_HOME="opt/${DESKTOP_FILE_NAME/-//}"
